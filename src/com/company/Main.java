@@ -300,8 +300,6 @@ public class Main {
                     System.out.print(language.translate("ENTER_BASKET_ID")+": ");
                     int basketIdCase2 = InputHelper.getValidIntegerInput();
                     StoreBasket basketForInfo = store.getBasketById(basketIdCase2);
-                    System.out.println(basketForInfo instanceof LoyalCustomerBasket);
-                    System.out.println(basketForInfo.getClass().getName());
                     if (basketForInfo != null ) {
                         System.out.println("Basket ID: "+ basketForInfo.getId());
                         System.out.println("Cashier Name: "+ basketForInfo.getCashierName());

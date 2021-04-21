@@ -22,7 +22,7 @@ public class EmployeeAsCustomer extends User implements Customer {
     @Override
     public double calculateBonus() {
         double bonusAmount = 0;
-        if (point/100 >= 0){
+        if (point%100 >= 0){
             bonusAmount = point/100 * 50;
         }
         return bonusAmount;

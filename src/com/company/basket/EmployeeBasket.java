@@ -25,8 +25,7 @@ public class EmployeeBasket extends StoreBasket {
 
     @Override
     public double calculatePayment() {
-        super.calculatePayment();
-        return super.getNetAmount();
+        return super.calculatePayment();
     }
 
     @Override
