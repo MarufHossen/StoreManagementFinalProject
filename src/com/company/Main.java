@@ -385,6 +385,8 @@ public class Main {
                 case 8:
                     isCashierLoggedIn = false;
                     loggedCashier.calculateExtraHours();
+                    System.out.println("Total hours of work: "+ Math.ceil(loggedCashier.getHoursOfWork() * 20) / 20);
+                    System.out.println("Overtime bonus: " + loggedCashier.getBonus());
                     store.updateCashierById(loggedCashier.getId(), loggedCashier);
                     System.out.println(language.translate("LOG_OUT_SUCCESSFULLY"));
                     break;

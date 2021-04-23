@@ -35,7 +35,21 @@ public class Cashier extends User implements Payable {
         this.internalPhoneNumber = internalPhoneNumber;
     }
 
+    public double getHoursOfWork() {
+        return hoursOfWork;
+    }
 
+    public void setHoursOfWork(double hoursOfWork) {
+        this.hoursOfWork = hoursOfWork;
+    }
+
+    public double getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
+    }
 
     public double getBaseSalary() {
         return baseSalary;
@@ -56,8 +70,6 @@ public class Cashier extends User implements Payable {
         if (todayHoursOfWork > 8){
             this.bonus = this.bonus+((todayHoursOfWork-8)*10);
         }
-        System.out.println("Total hours of work: " + hoursOfWork);
-        System.out.println("Overtime bonus: " + this.bonus);
     }
 
     @Override
